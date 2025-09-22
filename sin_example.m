@@ -24,6 +24,7 @@ fprintf("\nThe average value of y is  %d\n", myavg)
 
 %%(unrelated)
 1 ~= 2; % NOT EQUAL
+1 == 2; % EQUAL
 1>0 & 2>1;   %   & means AND
 1>0 | 0>1;   %   | means OR
 
