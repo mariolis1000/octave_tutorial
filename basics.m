@@ -36,11 +36,5 @@ endif
 time_for = toc%%
 
 
-%% While approach
-va = 100
-while  va > 0
+my_f(length(A))
 
-  fprintf("%d  %d", va, sqrt(va))
-  va = va -1;
-  disp("\n")
-endwhile
