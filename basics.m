@@ -1,3 +1,6 @@
+%A Program that creates 1000 random numbers between 1 and 5
+%then checks if at least 20% are equal to 3
+
 % Section 1
 % IF statement
 
