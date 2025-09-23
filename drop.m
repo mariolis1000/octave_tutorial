@@ -1,3 +1,4 @@
+% Plotting V(t) and X(t) functions from a differential equation
 t= linspace (0,20, 100000);
 y=  49*t + (245*exp(-t/5)) -245;
 y1 = @(t) 49*t + (245*exp(-t/5)) -245;
