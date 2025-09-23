@@ -1,0 +1,12 @@
+#Compiled files
+*.o
+*.out
+*.exe
+
+#text or image files
+*.txt
+*.jpeg
+*.jpg
+
+#octave figures 
+*.ofig
