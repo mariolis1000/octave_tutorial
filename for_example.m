@@ -1,4 +1,8 @@
 clc, clearvars
+%A program that takes ten thousand numbers
+% with random values between 0 and 1
+% and trying to select them with a chance of 30%
+
 
 N = 10000;
 result =0;
@@ -13,3 +17,4 @@ for iterator = 1:N
 endfor
 disp(result/N)
 toc
+
