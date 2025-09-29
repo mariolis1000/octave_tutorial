@@ -7,7 +7,7 @@
 clc, clearvars  %, close all
 
 tic
-A = randi([1 5], 1, 1000)
+A = randi([1 5], 1, 100000)
 time_randi = toc
 
 %If approach
