@@ -4,8 +4,8 @@ clearvars, close all
 t = linspace(0,5,100000);
 y0 =0;
 
-a = -1
-b = 2.5
+a = -2
+b = 5
 
 b = b*(-1);
 % IMPORTANT!
