@@ -10,3 +10,6 @@
 
 #octave figures 
 *.ofig
+
+#Personal Junk/testing folder
+Junk/
