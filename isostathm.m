@@ -5,7 +5,7 @@ clearvars, close all
 
   %create my radius and x,y values
 r = 20.0;
-[x y] = meshgrid(-r:r/100:r, -r:r/100:r);
+[x y] = meshgrid(-r:r/80:r, -r:r/80:r);
 
   %declaring the function f
   %of the circle
