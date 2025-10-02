@@ -5,7 +5,7 @@ clearvars, close all
 
   %create my radius and x,y values
 r = 1.0;
-[x y] = meshgrid(-r:r/100:r, -r:r/100:r);
+[x y] = meshgrid(-r:r/80:r, -r:r/80:r);
 
   %declaring the function f
   %of the circle
@@ -20,7 +20,7 @@ f(inside <= 0) =NaN;
 figure(1);
 hold on
 mesh(x, y , f)
-%mesh(x, y , -f)
+mesh(x, y , -f)
 axis equal;
 %shading interp;
 title('Paraboloid')
