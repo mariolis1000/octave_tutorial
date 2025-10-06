@@ -20,6 +20,6 @@ for c = -5:1:5
 endfor
 xlabel('t')
 ylabel('y')
-axis ([-5 5 -10 30])
+axis ([-4 4 -10 20])
 hold off
 
