@@ -1,6 +1,6 @@
 clearvars, close all
 
-x = linspace(-10,10,100000);
+x = linspace(-15,15,100000);
 
 C = 1.0;
 
@@ -8,7 +8,7 @@ C = 1.0;
 %y =  1 -(x.^3 + (x.^2).*2  + x.*2 + 4).^0.5
 %y = (1.0)./(x.^2 -x -6);
 %y = -1*sqrt(2*log(x.^2 + 1) + 4);
-y = x.^2 - x +2;
+%y = x.^2 - x +2;
 
 figure(1);
 hold on
@@ -18,10 +18,11 @@ hold on
   %ezplot(@(x,y) y - 1 + sqrt(x.^3 + ((x.^2).*2)  + x.*2 + 4))
   %ezplot(@(x,y) y.^3 -(y.^2).*3  -(x.^3) -x +2)
   %ezplot(@(x,y) y.^4 + y.*16 + x.^4 -(x.^2).*8 -17)
-  plot(x,y)
+  %plot(x,y)
+  ezplot(@(x,y) y - cos(x.^2))
 %endfor
 %ezplot(@(x,y) y+1, [-2 2 -2 2])
-axis ([-10 10])
+axis equal
 grid on
 set(gca, 'GridColor', [0,0,0])
 set(gca, 'GridAlpha', 0.3)
