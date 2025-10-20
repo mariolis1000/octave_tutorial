@@ -1,28 +1,38 @@
 clearvars, close all
 
-x = linspace(-15,15,100000);
+%Template for dy/dx = b - ay
+% diff equations
 
-C = 1.0;
 
 
-%y =  1 -(x.^3 + (x.^2).*2  + x.*2 + 4).^0.5
-%y = (1.0)./(x.^2 -x -6);
-%y = -1*sqrt(2*log(x.^2 + 1) + 4);
-%y = x.^2 - x +2;
+
+x = linspace(-0,100,100000);
+
+
+r = 0.08;  %Default values
+
+y0 = 50; %My constants
+b = r/4;
+a = r/100;
+
+
+
+k = 2000
+f = @(t) (k/r)*(exp(t.*r) - 1)
+
+
 
 figure(1);
 hold on
-%for C = -3:1:3
-  %ezplot(@(x,y) -x.^3 + 3.*y - y.^3 +C)
-  %plot(x, y)
-  %ezplot(@(x,y) y - 1 + sqrt(x.^3 + ((x.^2).*2)  + x.*2 + 4))
-  %ezplot(@(x,y) y.^3 -(y.^2).*3  -(x.^3) -x +2)
+for y0 = 0:10:50
+  y = (y0 -(b/a))*exp(x.*(-a))  + (b/a);
+  plot(x,y)
+
   %ezplot(@(x,y) y.^4 + y.*16 + x.^4 -(x.^2).*8 -17)
-  %plot(x,y)
-  ezplot(@(x,y) y - cos(x.^2))
-%endfor
+  %ezplot(@(x,y) y - cos(x.^2))
+endfor
 %ezplot(@(x,y) y+1, [-2 2 -2 2])
-axis equal
+%axis equal
 grid on
 set(gca, 'GridColor', [0,0,0])
 set(gca, 'GridAlpha', 0.3)
