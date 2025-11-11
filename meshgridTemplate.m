@@ -1,17 +1,16 @@
-clearvars
-%close all
+clearvars, close all
 
 
 %Create the matrix of x and y values
 c= 1;           %How much "larger" the y axis is compared to x
-step = 0.5     %How many vectors i want, smaller step means more
-bo = 10  %bound
+step = 0.2     %How many vectors i want, smaller step means more
+bo = 3  %bound
 [x y] = meshgrid(-bo:step:bo, -bo*c:step*c:bo*c);  %The matrix of values
 
 
 %Defining the differential equation
 
-  dy = (x.^2)./(1 - y.^2)
+  dy = 3 -(x.*2) -y.*0.5 %(x.^2)./(1 - y.^2)
   dx = ones(size(dy));
 
 
