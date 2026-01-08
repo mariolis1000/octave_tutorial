@@ -7,8 +7,8 @@ clearvars, close all
 
 %x = linspace(-5,5,1000);
 %y = linspace(-5,5,1000);
-[x y] = meshgrid(-1:0.02:1, -1:0.02:1 );
-z =  y.^2 -(x.^2 );
+%[x y] = meshgrid(-1:0.02:1, -1:0.02:1 );
+%z =  y.^2 -(x.^2 );
 
 
 figure(1);
